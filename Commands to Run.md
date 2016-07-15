@@ -1,5 +1,5 @@
 
-To Start Streaming
+### To Start Streaming
 
 1. Start Zookeeper
 	zkserver start
@@ -9,6 +9,8 @@ To Start Streaming
 	./apache-cassandra-2.1.14/bin/cassandra -f
 4. Start Producer
 5. Start Consumer
+
+### To copy new csv into Postgres
 
 After downloading a new CSV with 311 data, run `clean_up_sf311.py` to 
 generate table ready for import to postgres. 
