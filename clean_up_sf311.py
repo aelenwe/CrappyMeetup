@@ -3,7 +3,6 @@ import csv
 import re
 import os
 import psycopg2
-from psycopg2.extensions import AsIs
 
 
 # Get current working directory
@@ -79,10 +78,10 @@ except psycopg2.Error, e:
     print e
     pass
 
-copy_csv = ("COPY newsf311 FROM %s DELIMITER ',' CSV HEADER;")
+copy_csv = "COPY newsf311 FROM %s DELIMITER ',' CSV HEADER;"
 
 # populate table
-with open (new_path,'r') as f:
+with open(new_path, 'r') as f:
     pg_cur.execute(copy_csv, (new_path,))
     pg_conn.commit()
 
@@ -100,4 +99,3 @@ pg_conn.commit()
 rename_new = "ALTER TABLE newsf311 RENAME TO sf311;"
 pg_cur.execute(rename_new)
 pg_conn.commit()
-
