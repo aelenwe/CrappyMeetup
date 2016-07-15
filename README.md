@@ -34,6 +34,7 @@ I used streaming data from [Meetup](http://www.Meetup.com/Meetup_api/docs/stream
 
 <img src="imgs/Crappy_MeetUp_Architecture.png" alt="architecture" style="width: 1500px;"/>
 
+
 ## The Map
 
 
