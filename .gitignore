@@ -1,9 +1,10 @@
 # Data
 data/
 tmpdir/
-nyctaxisub.csv
+*.csv
 distinct_normalized_page_views/
 logs.txt
+
 
 # Temp files
 Untitled.ipynb
