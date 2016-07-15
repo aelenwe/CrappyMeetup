@@ -20,7 +20,7 @@ pg_cur = pg_conn.cursor()
 meetup_loc = Eventstream.objects(venue_city='San Francisco', status='upcoming')
 
 
-def fetch_poop(months=6, radius=100, days=30):
+def fetch_poop(months=6, radius=100, days=14):
     """
     Count the number of poops with in the radius during the timeframe.
     This uses Postgres' point-based earth distances which returns distance in
